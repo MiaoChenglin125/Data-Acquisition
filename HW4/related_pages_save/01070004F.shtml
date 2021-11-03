@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>【北京华彬庄园高尔夫高尔夫球场天气】北京华彬庄园高尔夫高尔夫球今天天气预报,今天,周末,今天天气,7天,高尔夫天气,高尔夫球场天气预报一周,高尔夫球场天气预报查询</title>
+<meta  name="keywords" content="高尔夫教学视频,球场排名,高尔夫订场,高球资讯,高球介绍" />
+<meta name="description" content="中国天气网高尔夫频道提供了全国知名475个高尔夫球场的精细化天气预报服务，同时汇聚了国内外前沿高尔夫赛事信息,囊括行业内外新形势动态。" />
+<meta content="中国天气网高尔夫频道" property="og:title" /> 
+<meta content="整个频道包含高尔夫教学视频、球场排名、高尔夫订场、高球资讯、高球介绍五大栏目覆盖全行业报道。" property="og:description" />
+<link href="http://i.tq121.com.cn/c/golf/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://i.tq121.com.cn/j/jquery-1.8.2.js" ></script>
+
+</head>
+
+<body>
+<input id="colorid" type="hidden" value="预报">
+<input id="colorids" value="http://www.weather.com.cn/forecast/" type="hidden">
+
+<link href="http://i.tq121.com.cn/c/weather2017/headStyle_1.css" rel="stylesheet">
+
+<div class="weather_li">
+	<div class="nav_li_box">
+    	<div class="weather_li_left">
+        	<a href="http://www.weather.com.cn/">首页</a>
+          <a href="http://www.weather.com.cn/forecast/">预报</a>
+<a href="http://www.weather.com.cn/radar/">雷达</a>
+          <a href="http://www.weather.com.cn/satellite/">云图</a>
+          
+          <a href="http://www.weather.com.cn/live/">临近预报</a>
+          <a href="http://products.weather.com.cn/">专业产品</a>
+          <a href="http://news.weather.com.cn/">资讯</a>
+  <a href="http://www.weather.com.cn/life/">生活</a>
+  <a href="http://www.weather.com.cn/aviation/">航空</a>
+           
+          <a href="http://www.weatherdt.com/" target="_blank">产创平台</a>
+            <div href="javascript:void(0)" class="more_li">更多
+            <div class="weather_li_open" style="width: 502px; display: none;">
+        		<p>
+        			<style>
+.weather_li_open p a{font-size:14px;padding:0 5px}
+</style>
+                    <a href="http://www.weather.com.cn/alarm/">预警</a>
+                  <a href="http://typhoon.weather.com.cn/" target="_blank">台风路径</a>
+                  <a href="http://www.weather.com.cn/space/">空间天气</a>
+                  <a href="http://p.weather.com.cn/">图片</a>
+                  <a href="http://www.weather.com.cn/video/">视频</a>
+                  <a href="http://www.weather.com.cn/zt/">专题</a>
+                  <a href="http://www.weather.com.cn/air/">环境</a>
+                  <a href="http://www.weather.com.cn/trip/">旅游</a>
+                  <a href="http://www.sportsweather.cn/golf/">高尔夫</a>
+                  <a href="http://www.weather.com.cn/tqbx/">保险</a>
+                </p>
+                <p style="border:none;">
+                     <a href="http://www.weather.com.cn/forecast/skiweather.shtml">滑雪</a>
+                  <a href="http://www.weather.com.cn/jt/">交通</a>
+                  <a href="http://www.weather.com.cn/slpd/index.shtml">水利</a>
+                  <a href="http://www.weather.com.cn/science/">科普</a>
+                  <a href="http://www.weather.com.cn/fzjz/">减灾</a>
+                  <a href="http://www.weather.com.cn/climate/">气候变化</a>
+                  <a href="http://marketing.weather.com.cn/">商业合作</a>
+                  <a href="http://www.weather.com.cn/province/">省级站</a>
+                  <a href="http://club.weather.com.cn/">社区</a>
+                </p>
+            </div>
+            
+            </div>                                                  
+        </div>
+        <div class="weather_li_right">
+        	  <div class="w_weather" id="w_weather">	</div><a href="#" class="login_li">登录</a>
+        </div>
+        
+    </div>
+</div>
+<div class="weather_li_head">
+	<div class="weather_li_box">
+    	<div class="w_li_logo fl">
+        	<a href="http://www.weather.com.cn/?from=mobile"></a>
+            <span>预报</span>
+        </div>
+         <div class="search-box fr">
+      <div class="search clearfix">
+        <div class="select_li">
+          <p>天气<i></i></p>
+          <ul class="select_box" style="display: none;">
+            <li class="tianqi cur">天气</li>
+            <li class="zixun">资讯</li>
+          </ul>
+        </div>
+        <input type="text" value="输入城市、乡镇、街道、景点名称 查天气" id="txtZip" class="textinput text" style="display: inline-block;">
+        <div id="zhong_search" style="display: none;">
+          <iframe src="http://promotion.chinaso.com/chinasosearch/chinaso-weather1.html" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        <span class="input-btn" style="display: block;"><input type="button" value="" id="btnZip" class="btn ss"></span>
+        <div class="clear"></div>
+      </div>
+      <div class="inforesult"></div>
+      <div id="show" style="display: none;">
+        <ul></ul>
+      </div>
+      <div class="city-box" style="display: none;">
+        <div class="city-tt">
+          <a href="javascript:void(0)" class="cur">正在热搜</a>
+          <a href="javascript:void(0)">本地周边</a>
+          <b></b>
+        </div>
+        <div class="w_city city_guonei" style="display:block; padding-bottom:0">
+          <dl>
+            <dt>国内</dt>
+            <dd>  
+              <!--<a href="http://www.weather.com.cn/weather1d/101271906.shtml#search" style="position: relative; left: -12px; padding: 0px 1px; color:#7d7d7d; background:#ffe7d4;">九寨沟<em style="font-size: 10px; color: #f68d3b;padding-left:1px;position:relative;top:3px;"><img src="http://i.tq121.com.cn/i/weather2017/tag.png" style="vertical-align: top;border:none;" target="_blank"></em></a>-->
+              <a href="http://www.weather.com.cn/weather1d/101010100.shtml#search" target="_blank">北京</a>
+              <a href="http://www.weather.com.cn/weather1d/101020100.shtml#search" target="_blank">上海</a>
+              <a href="http://www.weather.com.cn/weather1d/101210101.shtml#search" target="_blank">杭州</a>
+              <a href="http://www.weather.com.cn/weather1d/101280101.shtml#search" target="_blank">广州</a>
+              <a href="http://www.weather.com.cn/weather1d/101200101.shtml#search" target="_blank">武汉</a>
+              <a href="http://www.weather.com.cn/weather1d/101190101.shtml#search" target="_blank">南京</a>
+              <a href="http://www.weather.com.cn/weather1d/101280601.shtml#search" target="_blank">深圳</a>
+              <a href="http://www.weather.com.cn/weather1d/101190401.shtml#search" target="_blank">苏州</a>
+              <a href="http://www.weather.com.cn/weather1d/101230201.shtml#search" target="_blank">厦门</a>
+              <a href="http://www.weather.com.cn/weather1d/101220101.shtml#search" target="_blank">合肥</a>
+              <a href="http://www.weather.com.cn/weather1d/101250101.shtml#search" target="_blank">长沙</a>  
+              <a href="http://www.weather.com.cn/weather1d/101270101.shtml#search" target="_blank">成都</a> 
+            </dd>
+          </dl>
+          <dl>
+            <dt>国际</dt>
+            <dd>
+              <a href="http://www.weather.com.cn/weather1d/102010100.shtml#search" target="_blank">首尔</a>
+              <a href="http://www.weather.com.cn/weather1d/104010100.shtml#search" target="_blank">新加坡</a>
+              <a href="http://www.weather.com.cn/weather1d/106010100.shtml#search" target="_blank">曼谷</a>
+              <a href="http://www.weather.com.cn/weather1d/401110101.shtml#search" target="_blank">纽约</a>
+              <a href="http://www.weather.com.cn/weather1d/124020100.shtml#search" target="_blank">迪拜</a>
+              <a href="http://www.weather.com.cn/weather1d/103163100.shtml#search" target="_blank">大阪</a>
+              <a href="http://www.weather.com.cn/weather1d/601020101.shtml#search" target="_blank">悉尼</a>
+              <a href="http://www.weather.com.cn/weather1d/601060101.shtml#search" target="_blank">墨尔本</a>
+              <a href="http://www.weather.com.cn/weather1d/401040101.shtml#search" target="_blank">洛杉矶</a>
+              <a href="http://www.weather.com.cn/weather1d/105010100.shtml#search" target="_blank">吉隆坡</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt>景点</dt>
+            <dd>
+              <a href="http://www.weather.com.cn/weather1d/10101010018A.shtml#search" target="_blank">故宫</a>
+              <a href="http://www.weather.com.cn/weather1d/10130051008A.shtml#search" target="_blank">阳朔漓江</a>
+              <a href="http://www.weather.com.cn/weather1d/10118090107A.shtml#search" target="_blank">龙门石窟</a>
+              <a href="http://www.weather.com.cn/weather1d/10109022201A.shtml#search" target="_blank">野三坡</a>
+              <a href="http://www.weather.com.cn/weather1d/10101020015A.shtml#search" target="_blank">颐和园</a>
+              <a href="http://www.weather.com.cn/weather1d/10127190601A.shtml#search" target="_blank">九寨沟</a>
+              <a href="http://www.weather.com.cn/weather1d/10102010007A.shtml#search" target="_blank">东方明珠</a>
+              <a href="http://www.weather.com.cn/weather1d/10125150503A.shtml#search" target="_blank">凤凰古城</a>
+              <a href="http://www.weather.com.cn/weather1d/10111010119A.shtml#search" target="_blank">秦始皇陵</a>
+              <a href="http://www.weather.com.cn/weather1d/10125060301A.shtml#search" target="_blank">桃花源</a>
+            </dd>
+          </dl>
+          <dl style="margin-bottom:5px;border:none;">
+            <dt>高球</dt>
+            <dd> 
+              <a href="http://www.sportsweather.cn/weather/10102090003F.shtml#search" target="_blank">佘山</a> 
+              <a href="http://www.sportsweather.cn/weather/10129010601F.shtml#search" target="_blank">春城湖畔</a>
+              <a href="http://www.sportsweather.cn/weather/10101070004F.shtml#search" target="_blank">华彬庄园</a>
+              <a href="http://www.sportsweather.cn/weather/10128060113F.shtml#search" target="_blank">观澜湖</a> 
+              <a href="http://www.sportsweather.cn/weather/10131010107F.shtml#search" target="_blank">依必朗</a>
+              <a href="http://www.sportsweather.cn/weather/10102080001F.shtml#search" target="_blank">旭宝</a>
+              <a href="http://www.sportsweather.cn/weather/10131021101F.shtml#search" target="_blank">博鳌</a> 
+              <a href="http://www.sportsweather.cn/weather/10129140501F.shtml#search" target="_blank">玉龙雪山</a> 
+              <a href="http://www.sportsweather.cn/weather/10128010103F.shtml#search" target="_blank">番禺南沙</a>
+              <a href="http://www.sportsweather.cn/weather/10101040001F.shtml#search" target="_blank">东方明珠</a> 
+            </dd>
+          </dl>
+        </div>
+        <div class="w_city city_guonei gn">
+          <dl>
+            <dt>地区</dt>
+            <dd class="diq"><a href="http://www.weather.com.cn/weather1d/101030100.shtml#around1" title="天津" target="_blank">天津</a><a href="http://www.weather.com.cn/weather1d/101090201.shtml#around1" title="保定" target="_blank">保定</a><a href="http://www.weather.com.cn/weather1d/101090601.shtml#around1" title="廊坊" target="_blank">廊坊</a><a href="http://www.weather.com.cn/weather1d/101011000.shtml#around1" title="石景山" target="_blank">石景山</a><a href="http://www.weather.com.cn/weather1d/101011100.shtml#around1" title="大兴" target="_blank">大兴</a><a href="http://www.weather.com.cn/weather1d/101090218.shtml#around1" title="涿州" target="_blank">涿州</a><a href="http://www.weather.com.cn/weather1d/101090312.shtml#around1" title="涿鹿" target="_blank">涿鹿</a><a href="http://www.weather.com.cn/weather1d/101090604.shtml#around1" title="香河" target="_blank">香河</a><a href="http://www.weather.com.cn/weather1d/101090603.shtml#around1" title="永清" target="_blank">永清</a><a href="http://www.weather.com.cn/weather1d/101011400.shtml#around1" title="门头沟" target="_blank">门头沟</a></dd>
+          </dl>
+          <dl>
+            <dt>景点</dt>
+            <dd class="jind"><a href="http://www.weather.com.cn/weather1d/10101020002A.shtml#around1" title="北京鹫峰国家森林公园" target="_blank">北京鹫峰国家森林公园</a><a href="http://www.weather.com.cn/weather1d/10101020003A.shtml#around1" title="北京天文馆" target="_blank">北京天文馆</a><a href="http://www.weather.com.cn/weather1d/10101020012A.shtml#around1" title="中国科学院植物研究所北京植物园" target="_blank">中国科学院植物研究所北京植物园</a><a href="http://www.weather.com.cn/weather1d/10101020013A.shtml#around1" title="中央电视塔" target="_blank">中央电视塔</a><a href="http://www.weather.com.cn/weather1d/10101020004A.shtml#around1" title="锦绣大地农业观光园区" target="_blank">锦绣大地农业观光园区</a><a href="http://www.weather.com.cn/weather1d/10101020005A.shtml#around1" title="太平洋汉海海底世界" target="_blank">太平洋汉海海底世界</a><a href="http://www.weather.com.cn/weather1d/10101020006A.shtml#around1" title="北京动物园" target="_blank">北京动物园</a><a href="http://www.weather.com.cn/weather1d/10101020007A.shtml#around1" title="北京植物园" target="_blank">北京植物园</a><a href="http://www.weather.com.cn/weather1d/10101020008A.shtml#around1" title="凤凰岭自然风景区公园" target="_blank">凤凰岭自然风景区公园</a><a href="http://www.weather.com.cn/weather1d/10101020009A.shtml#around1" title="香山公园" target="_blank">香山公园</a><a href="http://www.weather.com.cn/weather1d/10101020010A.shtml#around1" title="玉渊潭公园" target="_blank">玉渊潭公园</a><a href="http://www.weather.com.cn/weather1d/10101020011A.shtml#around1" title="圆明园遗址公园" target="_blank">圆明园遗址公园</a></dd>
+          </dl>
+          <dl style="border:none;margin-bottom:5px;">
+            <dt>乡镇</dt>
+            <dd class="jind"><a href="http://forecast.weather.com.cn/town/weather1dn/101010200001.shtml#around1" title="八里庄街道" target="_blank">八里庄街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200002.shtml#around1" title="北太平庄街道" target="_blank">北太平庄街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200003.shtml#around1" title="北下关街道" target="_blank">北下关街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200004.shtml#around1" title="东升地区办事处" target="_blank">东升地区办事处</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200005.shtml#around1" title="甘家口街道" target="_blank">甘家口街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200006.shtml#around1" title="海淀街道" target="_blank">海淀街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200007.shtml#around1" title="花园路街道" target="_blank">花园路街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200008.shtml#around1" title="马连洼街道" target="_blank">马连洼街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200009.shtml#around1" title="青龙桥街道" target="_blank">青龙桥街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200010.shtml#around1" title="清河街道" target="_blank">清河街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200011.shtml#around1" title="清华园街道" target="_blank">清华园街道</a><a href="http://forecast.weather.com.cn/town/weather1dn/101010200012.shtml#around1" title="上地街道" target="_blank">上地街道</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div class="gef-cont">
+
+
+	<div class="gef-banner">
+	<div class="crumbs fl">
+				<a href="http://www.sportsweather.cn/golf/" target="_blank">高尔夫频道</a>
+				<span>&gt;</span>
+				<a target="_blank" href="http://www.sportsweather.cn/golf/order.shtml">高尔夫订场</a><span>&gt;</span>  <span>北京华彬庄园高尔夫</span>
+			</div>
+    	<img src="http://i.tq121.com.cn/i/golf/img/10101070004F.jpg">
+          <div class="gef-contact">
+          	   <div class="gef-title"><h2>北京华彬庄园高尔夫</h2><a target="_blank" href="http://21golf.com/golf/lists/search/1?cityname=北京&city=&start_time=2016-04-21&address=&court_name=&court_pattern=&court_data="><img src="http://i.tq121.com.cn/i/golf/gef-order.png"></a></div>
+               <div class="clear"></div>
+               <div class="gef-adress"><p>球场电话：010-89796888</p><p>球场地址: 北京市昌平区南口华彬庄园</p></div>
+          </div>
+          <div class="gef-weather"><div class="sk_alarm"></div><div class="gef-textbox-right2">
+                <ul>
+                	<li><span>球场模式 :</span>暂无</li>
+                    <li><span>开业时间 :</span>暂无</li>
+					<li><span>球场数据 :</span>暂无</li>
+					<li><span>球场面积 :</span>暂无</li>
+					<li><span>球道长度 :</span>暂无</li>
+                </ul>
+            </div></div>
+			<div class="more-click more1">更多介绍</div>
+		  </div>
+		<div class="gef-textbox">
+        	<div class="gef-textbox-left">
+            	<div class="gef-introduce">
+                	<h3>球场简介</h3>
+                    <p>暂无</p>
+                </div>
+                <div class="gef-introduce gef-introduce-sheshi">
+                	<h3>球场设施</h3>
+                    <p>54洞球场 分尼克劳斯球场和金熊球场</p>
+                </div>
+            </div>
+   
+	</div>
+        <div class="clear"></div>
+        <!--天气列表-->
+        <div class="gef-list">
+        	<h3><span id="time">18:00更新</span>未来一周精细天气预报</h3>
+<div class="gef-list-div">
+<div class="gef-list-box">
+<div class="gef-list-date">3日（今天）</div>
+<div class="gef-list-yun2"><big title="晴" class="pngreen n00"></big>3℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+<3级<i class="wd_7"></i></div>
+<div class="gef-list-zi zhishu0"></div>
+</div>
+<div class="gef-list-box">
+<div class="gef-list-date">4日（明天）</div>
+<div class="gef-list-yun"><big title="晴" class="pngreen d00"></big>19℃</div><div class="clear"></div>
+<div class="gef-list-yun2"><big title="晴" class="pngreen n00"></big>4℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+<3级
+<i class="wd_7"></i><i class="wd_4"></i></div>
+<div class="gef-list-zi zhishu1"></div>
+</div>
+<div class="gef-list-box">
+<div class="gef-list-date">5日（周五）</div>
+<div class="gef-list-yun"><big title="阴" class="pngreen d02"></big>17℃</div><div class="clear"></div>
+<div class="gef-list-yun2"><big title="小雨" class="pngreen n07"></big>8℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+<3级
+<i class="wd_3"></i><i class="wd_3"></i></div>
+<div class="gef-list-zi zhishu2"></div>
+</div>
+<div class="gef-list-box">
+<div class="gef-list-date">6日<span>周六</span></div>
+<div class="gef-list-yun"><big title="雨夹雪" class="pngreen d06"></big>14℃</div><div class="clear"></div>
+<div class="gef-list-yun2"><big title="暴雪" class="pngreen n17"></big>-3℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+3-4级
+<i class="wd_7"></i><i class="wd_7"></i></div>
+<div class="gef-list-zi zhishu3"></div>
+</div>
+<div class="gef-list-box">
+<div class="gef-list-date">7日<span>周日</span></div>
+<div class="gef-list-yun"><big title="雨夹雪" class="pngreen d06"></big>2℃</div><div class="clear"></div>
+<div class="gef-list-yun2"><big title="阴" class="pngreen n02"></big>-6℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+<3级转3-4级
+<i class="wd_7"></i><i class="wd_7"></i></div>
+<div class="gef-list-zi zhishu4"></div>
+</div>
+<div class="gef-list-box">
+<div class="gef-list-date">8日（周一）</div>
+<div class="gef-list-yun"><big title="晴" class="pngreen d00"></big>3℃</div><div class="clear"></div>
+<div class="gef-list-yun2"><big title="小雪" class="pngreen n14"></big>-4℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+3-4级
+<i class="wd_7"></i><i class="wd_7"></i></div>
+<div class="gef-list-zi zhishu5"></div>
+</div>
+<div class="gef-list-box">
+<div class="gef-list-date">9日（周二）</div>
+<div class="gef-list-yun"><big title="阴" class="pngreen d02"></big>6℃</div><div class="clear"></div>
+<div class="gef-list-yun2"><big title="晴" class="pngreen n00"></big>-2℃</div><div class="clear"></div>
+<div class="gef-list-feng">
+3-4级
+<i class="wd_7"></i><i class="wd_7"></i></div>
+<div class="gef-list-zi zhishu6"></div>
+</div>
+</div>   <!--路径暂未定-->
+			<script>
+			var fc=[[{"date":"2021110320","ff":"<3级","dd":"西北风","ss":"0.5","temp":"8","weather":"晴","weather_code":"00"},{"date":"2021110323","ff":"<3级","dd":"西北风","ss":"0.8","temp":"6","weather":"晴","weather_code":"00"},{"date":"2021110402","ff":"<3级","dd":"西北风","ss":"1.1","temp":"4","weather":"晴","weather_code":"00"},{"date":"2021110405","ff":"<3级","dd":"西北风","ss":"1.7","temp":"4","weather":"晴","weather_code":"00"}],[{"date":"2021110408","ff":"<3级","dd":"西北风","ss":"1.5","temp":"8","weather":"晴","weather_code":"00"},{"date":"2021110411","ff":"<3级","dd":"东南风","ss":"0.7","temp":"16","weather":"晴","weather_code":"00"},{"date":"2021110414","ff":"<3级","dd":"南风","ss":"1.6","temp":"19","weather":"晴","weather_code":"00"},{"date":"2021110417","ff":"<3级","dd":"东南风","ss":"1.2","temp":"16","weather":"晴","weather_code":"00"},{"date":"2021110420","ff":"<3级","dd":"北风","ss":"0.5","temp":"9","weather":"晴","weather_code":"00"},{"date":"2021110423","ff":"<3级","dd":"北风","ss":"0.7","temp":"8","weather":"晴","weather_code":"00"},{"date":"2021110502","ff":"<3级","dd":"西北风","ss":"0.8","temp":"5","weather":"晴","weather_code":"00"},{"date":"2021110505","ff":"<3级","dd":"西北风","ss":"1.2","temp":"4","weather":"晴","weather_code":"00"}],[{"date":"2021110508","ff":"<3级","dd":"西北风","ss":"1.5","temp":"8","weather":"晴","weather_code":"00"},{"date":"2021110511","ff":"<3级","dd":"东南风","ss":"1.1","temp":"15","weather":"阴","weather_code":"02"},{"date":"2021110514","ff":"<3级","dd":"东南风","ss":"1.1","temp":"16","weather":"阴","weather_code":"02"},{"date":"2021110517","ff":"<3级","dd":"东南风","ss":"0.8","temp":"14","weather":"阴","weather_code":"02"},{"date":"2021110520","ff":"<3级","dd":"北风","ss":"0.6","temp":"10","weather":"阴","weather_code":"02"},{"date":"2021110523","ff":"<3级","dd":"西北风","ss":"0.4","temp":"10","weather":"小雨","weather_code":"07"},{"date":"2021110602","ff":"<3级","dd":"西风","ss":"0.7","temp":"9","weather":"小雨","weather_code":"07"},{"date":"2021110605","ff":"<3级","dd":"东风","ss":"1.0","temp":"9","weather":"小雨","weather_code":"07"}],[{"date":"2021110608","ff":"<3级","dd":"东南风","ss":"1.0","temp":"10","weather":"小雨","weather_code":"07"},{"date":"2021110611","ff":"<3级","dd":"东南风","ss":"1.7","temp":"12","weather":"小雨","weather_code":"07"},{"date":"2021110614","ff":"<3级","dd":"东南风","ss":"1.8","temp":"14","weather":"小雨","weather_code":"07"},{"date":"2021110617","ff":"<3级","dd":"西风","ss":"2.1","temp":"10","weather":"小雨","weather_code":"07"},{"date":"2021110620","ff":"3-4级","dd":"西北风","ss":"6.6","temp":"1","weather":"雨夹雪","weather_code":"06"},{"date":"2021110702","ff":"3-4级","dd":"西北风","ss":"5.6","temp":"-2","weather":"暴雪","weather_code":"17"}],[{"date":"2021110708","ff":"<3级","dd":"西北风","ss":"4.7","temp":"-1","weather":"大雪","weather_code":"16"},{"date":"2021110714","ff":"<3级","dd":"西北风","ss":"5.4","temp":"2","weather":"雨夹雪","weather_code":"06"},{"date":"2021110720","ff":"<3级","dd":"西北风","ss":"4.6","temp":"-4","weather":"多云","weather_code":"01"},{"date":"2021110802","ff":"<3级","dd":"西北风","ss":"5.4","temp":"-5","weather":"阴","weather_code":"02"}],[{"date":"2021110808","ff":"3-4级","dd":"西北风","ss":"6.4","temp":"-4","weather":"晴","weather_code":"00"},{"date":"2021110814","ff":"3-4级","dd":"西风","ss":"5.8","temp":"3","weather":"晴","weather_code":"00"},{"date":"2021110820","ff":"3-4级","dd":"西北风","ss":"7.1","temp":"-1","weather":"晴","weather_code":"00"},{"date":"2021110902","ff":"3-4级","dd":"西北风","ss":"6.8","temp":"-2","weather":"阴","weather_code":"02"}],[{"date":"2021110908","ff":"3-4级","dd":"西北风","ss":"7.7","temp":"0","weather":"小雪","weather_code":"14"},{"date":"2021110914","ff":"3-4级","dd":"西北风","ss":"7.0","temp":"6","weather":"阴","weather_code":"02"},{"date":"2021110920","ff":"3-4级","dd":"西北风","ss":"6.1","temp":"1","weather":"阴","weather_code":"02"},{"date":"2021111002","ff":"3-4级","dd":"西北风","ss":"5.8","temp":"-2","weather":"晴","weather_code":"00"}]]
+   <!--路径暂未定-->
+			</script>
+            <div class="curve_livezs" id="curve">
+                <div class="time">
+                </div>
+                <div class="wpic">
+                </div>
+                <div id="biggt" class="biggt">
+                </div>
+                <div class="tem">
+                </div>
+
+                <div id="wind" class="wind">
+                    <div id="winds" class="winds"></div>
+                    <div id="windz" class="windz"></div>
+                </div>
+
+            </div>
+        </div>
+        <!--天气列表-->
+        <!--周边球场周边环境-->
+        <div class="gef-around">
+            	<div class="gef-around-left">
+                <h3>
+                	                	<span class="color-on" id="qiuchuang">周边球场</span><em>|</em><span id="huanjing">周边景点</span>
+                	                	</h3>
+                                  	<div class="around-qiuchang">
+                			                			<ul>
+<a target="_blank" href="http://www.sportsweather.cn/weather/10101070001F.shtml" title="北京金泷湖高尔夫">
+<li class="xyn-name">北京金泷湖高尔夫</li>
+<li class="x-left">
+<p class="img clearfix">
+<big class="jpg30 n00"></big><em>/</em><big class="jpg30 dn00"></big>
+</p>
+<i>3/19℃</i>
+</li>
+<li class="xyn-hide">
+<3级
+</li>
+</a>
+</ul>
+                			                			<ul>
+<a target="_blank" href="http://www.sportsweather.cn/weather/10101070002F.shtml" title="北京彼岸青滩高尔夫">
+<li class="xyn-name">北京彼岸青滩高尔夫</li>
+<li class="x-left">
+<p class="img clearfix">
+<big class="jpg30 n00"></big><em>/</em><big class="jpg30 dn00"></big>
+</p>
+<i>3/18℃</i>
+</li>
+<li class="xyn-hide">
+<3级
+</li>
+</a>
+</ul>
+                			                			<ul>
+<a target="_blank" href="http://www.sportsweather.cn/weather/10101070003F.shtml" title="北京拉斐特国际高尔夫">
+<li class="xyn-name">北京拉斐特国际高尔夫</li>
+<li class="x-left">
+<p class="img clearfix">
+<big class="jpg30 n00"></big><em>/</em><big class="jpg30 dn00"></big>
+</p>
+<i>4/18℃</i>
+</li>
+<li class="xyn-hide">
+<3级
+</li>
+</a>
+</ul>
+                			                			<ul>
+<a target="_blank" href="http://www.sportsweather.cn/weather/10101070005F.shtml" title="北京顺峰乡村高尔夫（封场）">
+<li class="xyn-name">北京顺峰乡村高尔夫（封场）</li>
+<li class="x-left">
+<p class="img clearfix">
+<big class="jpg30 n00"></big><em>/</em><big class="jpg30 dn00"></big>
+</p>
+<i>4/18℃</i>
+</li>
+<li class="xyn-hide">
+<3级
+</li>
+</a>
+</ul>
+                			                			<ul>
+<a target="_blank" href="http://www.sportsweather.cn/weather/10101070007F.shtml" title="北京燕子口国际高尔夫">
+<li class="xyn-name">北京燕子口国际高尔夫</li>
+<li class="x-left">
+<p class="img clearfix">
+<big class="jpg30 n00"></big><em>/</em><big class="jpg30 dn00"></big>
+</p>
+<i>3/18℃</i>
+</li>
+<li class="xyn-hide">
+<3级
+</li>
+</a>
+</ul>
+                			                			<ul>
+<a target="_blank" href="http://www.sportsweather.cn/weather/10101070008F.shtml" title="北京静之湖度假村高尔夫">
+<li class="xyn-name">北京静之湖度假村高尔夫</li>
+<li class="x-left">
+<p class="img clearfix">
+<big class="jpg30 n01"></big><em>/</em><big class="jpg30 dn00"></big>
+</p>
+<i>5/19℃</i>
+</li>
+<li class="xyn-hide">
+<3级
+</li>
+</a>
+</ul>
+                							
+                    <div class="clear"></div>
+                  </div>
+                	<div class="around-huanjing">
+                	<input type="hidden" id="around_city_travel_update_time" value="2021110320"/>
+<h1 class="clearfix view">
+<span>周边地区</span>
+<em>|</em>
+<span class="move">周边景点</span>
+<i>2021-11-03 18:00更新</i>
+</h1>
+<ul class="clearfix view">
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070008A.shtml#around2" target="_blank">
+<span>温都水城</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>2/19°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070009A.shtml#around2" target="_blank">
+<span>小汤山科技农业示范园</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>2/19°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070010A.shtml#around2" target="_blank">
+<span>银山塔林风景区</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>6/16°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070011A.shtml#around2" target="_blank">
+<span>中国航空博物馆</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>2/19°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070012A.shtml#around2" target="_blank">
+<span>明十三陵</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>6/19°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070002A.shtml#around2" target="_blank">
+<span>蟒山国家森林公园</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>7/18°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070003A.shtml#around2" target="_blank">
+<span>棋盘山景区</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>2/17°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070004A.shtml#around2" target="_blank">
+<span>十三陵明皇蜡像宫</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>5/19°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070005A.shtml#around2" target="_blank">
+<span>居庸关长城</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>4/16°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070006A.shtml#around2" target="_blank">
+<span>龙脉温泉度假村</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>3/19°C</i>
+</a>
+</li>
+<li>
+<a href="http://www.weather.com.cn/weather1d/10101070007A.shtml#around2" target="_blank">
+<span>天龙源温泉家园</span>
+<p class="img clearfix">
+<big class="jpg30 n00"></big>
+<em>/</em>
+<big class="jpg30 d00"></big>
+</p>
+<i>5/19°C</i>
+</a>
+</li>
+</ul>
+                    <div class="clear"></div>
+                  </div>
+                	                  
+                </div>
+                <div class="gef-around-right">
+                	<a href="http://www.weather.com.cn/life/2016/04/2509192.shtml" target="_blank"><img src="http://i.tq121.com.cn/i/golf/gef-picture.png" /></a>
+                </div>
+                <div class="clear"></div>
+        </div>
+        <!--周边球场周边环境-->
+    </div>
+    <script type="text/javascript" src="http://i.tq121.com.cn/j/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="http://i.tq121.com.cn/j/golf/raphael.js"></script>
+    <script type="text/javascript" src="http://i.tq121.com.cn/j/golf//index.js"></script>
+    <script>
+$(document).ready(function() {
+	$(".gef-around-left h3 span").click(function() {
+		$(".gef-around-left h3 span").removeClass("color-on");
+		$(".round-qiuchang").hide();
+		$(this).addClass("color-on");
+	});
+	$("#huanjing").click(function() {
+		$(".around-qiuchang").hide();
+		$(".around-huanjing").show();
+	});
+	$("#qiuchuang").click(function() {
+		$(".around-qiuchang").show();
+		$(".around-huanjing").hide();
+	});
+$('.more-click').live('click',function(){
+				$ (this).toggleClass ("more2");
+				$('.gef-textbox-left').slideToggle("slow");
+			});
+});
+
+    </script>
+    <!-- 悬浮 -->
+<style>
+.r-x-box {
+    border-bottom: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    bottom: 50px;
+    left: 50%;
+    margin-left: 508px;
+    position: fixed;
+    width: 50px;
+    z-index: 10000;
+}
+.r-x1{ width:50px; height:50px; cursor:pointer;}
+.r-x-5{ background:url(http://i.tq121.com.cn/i/news/right-d9.png) no-repeat;}
+.r-x-5:hover{ background:url(http://i.tq121.com.cn/i/golf/right-d1.png) no-repeat;}
+
+.r-x-7{ background:url(http://i.tq121.com.cn/i/news/right-d13.png) no-repeat;}
+.r-x-7:hover{ background:url(http://i.tq121.com.cn/i/golf/right-d2.png) no-repeat;}
+</style>
+<script>
+$(function(){
+	
+$(".gotop").click(function(){  
+        if($(window).scrollTop()!=0){
+          $('body,html').stop().animate({scrollTop:0},1000);  
+            return false;  
+        }
+	    });
+
+});
+</script>
+<div class="r-x-box" >
+
+         <a href="http://www.weather.com.cn/index/feedback_201409.shtml#product#golf" target="_blank"><div class="r-x1 r-x-5"></div></a>
+    <a title="回到顶部" class="gotop" href="javascript:void(0)"><div class="r-x1 r-x-7"></div></a>
+        
+</div>
+<!-- 悬浮end -->
+	<!--尾-->
+	<div class="footer">
+  <div class="block">
+    <div class="Lcontent" style="width:582px;">
+      <dl style="width:280px; margin-right:22px;">
+        <dt>
+          <h3>网站服务</h3>
+        </dt>
+        <dd>
+          <p><a href="http://www.weather.com.cn/wzfw/gywm/">关于我们</a><a href="http://www.weather.com.cn/wzfw/lxwm/">联系我们</a><a href="http://www.weather.com.cn/wzfw/sybz/">帮助</a><a href="http://www.weather.com.cn/wzfw/ryzp/">人员招聘</a></p>
+          <p><a href="http://www.weather.com.cn/wzfw/kfzx/">客服中心</a><a href="http://www.weather.com.cn/wzfw/bqsm/">版权声明</a><a href="http://www.weather.com.cn/wzfw/wzls/">律师</a><a href="http://www.weather.com.cn/wzfw/wzdt/">网站地图</a></p>
+        </dd>
+      </dl>
+      <dl style="width:150px;">
+        <dt>
+          <h3>营销中心</h3>
+        </dt>
+        <dd>
+          <p><a href="http://marketing.weather.com.cn/wzhz/index.shtml">商务合作</a><a href="http://ad.weather.com.cn/index.shtml">广告服务</a><a style="display:block" href="http://marketing.weather.com.cn/wzhz/meizi.shtml">媒资合作</a></p>
+        </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+     <div class="friendLink" style="width:418px;">
+     <h3>相关链接</h3>
+     <p><a href="http://www.cma.gov.cn/" target="_blank">中国气象局</a><a href="http://www.chinamsa.org" target="_blank">中国气象服务协会</a> <a href="http://www.weathertv.cn/" target="_blank">中国天气频道</a><a href="http://www.xn121.com/" target="_blank">中国兴农网</a><a target="_blank" href="http://cwera.weather.com.cn/">风能太阳能资源中心</a></p>
+     
+   </div>
+
+    <div class="serviceinfo">
+<p style="height: 50px;"><span>客服邮箱：<a href="mailto:service@weather.com.cn">service@weather.com.cn</a></span><span style="width:220px;">广告服务：<b>010-58991840</b><b style="display:  block;">媒资合作：010-58993745</b></span><span><a href="https://beian.miit.gov.cn/" target="_blank">京ICP证010385-2号</a>　<a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">京公网安备11041400134号</a></span></p>
+      <p><span>客服热线：<b><a href="http://www.weather.com.cn/wzfw/kfzx/index.shtml" target="_blank">400-6000-121</a></b></span><span style="width:262px">  商务合作：<b>010-58993170</b></span></p>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="aboutUs"> 中国天气网版权所有，未经书面授权禁止使用&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright&copy;<a href="http://www.pmsc.cn/" target="_blank">中国气象局公共气象服务中心</a> All Rights Reserved (2008-2021)</div>
+</div>
+
+<script type="text/javascript" src="http://i.tq121.com.cn/j/core.js"></script>
+<script>W.use('j/golf/publicHead.js');</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080dabacb001ad3dc8b9b9049b36d43b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?080dabacb001ad3dc8b9b9049b36d43b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+	<!--尾-->
+	<style>
+	big.jpg30 {
+    background-image:url(http://i.tq121.com.cn/i/weather2015/png/white30.png);
+    height: 30px;
+    width: 30px;
+}
+	</style>
+</body>
+</html>
