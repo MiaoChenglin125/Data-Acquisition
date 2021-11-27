@@ -21,6 +21,7 @@ def index():
     sql = "SELECT * FROM book"
     cur.execute(sql)
     u = cur.fetchall()
+    print(u)
     conn.close()
     request_way='get'
     return render_template('index.html',u=u,request_way=request_way)
