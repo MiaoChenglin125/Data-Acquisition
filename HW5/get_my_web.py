@@ -12,5 +12,5 @@ if __name__=='__main__':
     page_text = page_text.encode(response.encoding)
     # decode解码,将unicode解码成utf-8
     page_text = page_text.decode("utf-8")
-    with open("get_web.html",'w',encoding='utf-8') as f:
+    with open("./webs/get_web.html",'w',encoding='utf-8') as f:
         f.write(page_text)
