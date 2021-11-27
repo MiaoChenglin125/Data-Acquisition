@@ -28,6 +28,7 @@ def jx_html(text):
 def save_fil(content):
     with open('book250.txt', 'a', encoding='utf-8')as f:
         f.write(json.dumps(content, ensure_ascii=False) + '\n')
+        print('写入成功')
 
 
 def main(offset):
@@ -40,5 +41,6 @@ def main(offset):
 
 if __name__ == '__main__':
     for i in range(0, 10):
+        print(i)
         main(offset=i * 25)
         time.sleep(1)  # 调用time休眠1S，防止因请求过快出发反爬虫

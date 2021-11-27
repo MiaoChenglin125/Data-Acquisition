@@ -262,51 +262,50 @@
 			</li>
 		</ul>
 		<div class="today clearfix" id="today">
-					<input type="hidden" id="hidden_title" value="11月03日20时 周三  多云转晴  7/19°C" />
-<input type="hidden" id="fc_24h_travel_update_time" value="2021110320"/>
-<input type="hidden" id="update_time" value="18:00"/>
+					<input type="hidden" id="hidden_title" value="11月14日08时 周日  晴转多云  15/3°C" />
+<input type="hidden" id="fc_24h_travel_update_time" value="2021111408"/>
+<input type="hidden" id="update_time" value="07:30"/>
 <div class="t">
 <ul class="clearfix">
 <li>
-<h1>3日（周三）</h1>
-<h2>夜间</h2>
-<big class="png80 n01"></big>
-<p class="wea" title="多云">多云</p>
-<p class="tem">
-<span>7</span><em>°C</em>
-</p>
-<p class="win clearfix"><i class="N"></i><span class="N" title="北风"><3级</span></p>
-<p class="sun sunDown"><i></i><span>日落 17:10</span></p>
-<div class="boult"></div>
-</li>
-<li>
-<h1>4日（周四）</h1>
+<h1>14日（周日）</h1>
 <h2>白天</h2>
 <big class="png80 d00"></big>
 <p class="wea" title="晴">晴</p>
 <p class="tem">
-<span>19</span><em>°C</em>
+<span>15</span><em>°C</em>
 </p>
-<p class="win"><i class="SE"></i><span class="SE" title="东南风"><3级</span></p>
-<p class="sun sunUp"><i></i><span>日出 06:47</span>
-</p>
+<p class="win clearfix"><i class="SW"></i><span class="SW" title="西南风"><3级</span></p>
+<p class="sun sunUp"><i></i><span>日出 06:57</span></p>
 <div class="boult"></div>
 </li>
 <li>
-<h1>4日（周四）</h1>
+<h1>14日（周日）</h1>
 <h2>夜间</h2>
-<big class="png80 n00"></big>
+<big class="png80 n01"></big>
+<p class="wea" title="多云">多云</p>
+<p class="tem">
+<span>3</span><em>°C</em>
+</p>
+<p class="win"><i class="N"></i><span class="N" title="北风"><3级</span></p>
+<p class="sun sunDown"><i></i><span>日落 17:00</span></p>
+<div class="boult"></div>
+</li>
+<li>
+<h1>15日（周一）</h1>
+<h2>白天</h2>
+<big class="png80 d00"></big>
 <p class="wea" class="晴">晴</p>
 <p class="tem">
-<span>8</span><em>°C</em>
+<span>12</span><em>°C</em>
 </p>
-<p class="win"><i class="NE"></i><span class="NE" title="东北风"><3级</span></p>
-<p class="sun sunDown"><i></i><span>日落 17:09</span></p>
+<p class="win"><i class="SE"></i><span class="SE" title="东南风"><3级</span></p>
+<p class="sun sunUp"><i></i><span>日出 06:58</span></p>
 <div class="boult"></div>
 </li>
 </ul>
 </div>
-							<input type="hidden" id="fc_3h_travel_update_time" value="2021110320"/>
+							<input type="hidden" id="fc_3h_travel_update_time" value="2021111408"/>
 <div class="curve_livezs" id="curve">
 <div class="time">
 </div>
@@ -322,272 +321,272 @@
 </div>
 </div>
 <script>
-var hour3data={"1d":["03日20时,n00,晴,10℃,东北风,<3级","03日23时,n00,晴,9℃,北风,<3级","04日02时,n01,多云,8℃,西北风,<3级","04日05时,n00,晴,7℃,北风,<3级","04日08时,d00,晴,9℃,西北风,<3级","04日11时,d00,晴,15℃,东北风,<3级","04日14时,d00,晴,19℃,东南风,<3级","04日17时,d00,晴,16℃,东南风,<3级","04日20时,n00,晴,12℃,东风,<3级","04日23时,n00,晴,10℃,北风,<3级","05日02时,n00,晴,9℃,北风,<3级","05日05时,n00,晴,8℃,北风,<3级","05日08时,d00,晴,10℃,东北风,<3级"],"23d":[["06日08时,d07,小雨,12℃,东南风,<3级","06日11时,d07,小雨,11℃,东南风,<3级","06日14时,d08,中雨,13℃,东南风,<3级","06日17时,d07,小雨,11℃,西北风,<3级","06日20时,n10,暴雨,5℃,西北风,3-4级","07日02时,n06,雨夹雪,0℃,西北风,3-4级"],["07日08时,d06,雨夹雪,0℃,西北风,<3级","07日14时,d06,雨夹雪,2℃,西北风,3-4级","07日20时,n01,多云,-2℃,西北风,<3级","08日02时,n02,阴,-3℃,西北风,<3级"]],"7d":[["03日20时,n00,晴,10℃,东北风,<3级","03日23时,n00,晴,9℃,北风,<3级","04日02时,n01,多云,8℃,西北风,<3级","04日05时,n00,晴,7℃,北风,<3级"],["04日08时,d00,晴,9℃,西北风,<3级","04日11时,d00,晴,15℃,东北风,<3级","04日14时,d00,晴,19℃,东南风,<3级","04日17时,d00,晴,16℃,东南风,<3级","04日20时,n00,晴,12℃,东风,<3级","04日23时,n00,晴,10℃,北风,<3级","05日02时,n00,晴,9℃,北风,<3级","05日05时,n00,晴,8℃,北风,<3级"],["05日08时,d00,晴,10℃,东北风,<3级","05日11时,d01,多云,14℃,东北风,<3级","05日14时,d02,阴,16℃,东北风,<3级","05日17时,d07,小雨,15℃,北风,<3级","05日20时,n02,阴,12℃,西北风,<3级","05日23时,n07,小雨,12℃,西北风,<3级","06日02时,n08,中雨,11℃,东北风,<3级","06日05时,n07,小雨,11℃,东风,<3级"],["06日08时,d07,小雨,12℃,东南风,<3级","06日11时,d07,小雨,11℃,东南风,<3级","06日14时,d08,中雨,13℃,东南风,<3级","06日17时,d07,小雨,11℃,西北风,<3级","06日20时,n10,暴雨,5℃,西北风,3-4级","07日02时,n06,雨夹雪,0℃,西北风,3-4级"],["07日08时,d06,雨夹雪,0℃,西北风,<3级","07日14时,d06,雨夹雪,2℃,西北风,3-4级","07日20时,n01,多云,-2℃,西北风,<3级","08日02时,n02,阴,-3℃,西北风,<3级"],["08日08时,d00,晴,-3℃,西北风,<3级","08日14时,d00,晴,3℃,西北风,<3级","08日20时,n00,晴,0℃,西风,<3级","09日02时,n02,阴,0℃,西风,<3级"],["09日08时,d02,阴,2℃,西北风,<3级","09日14时,d02,阴,6℃,西北风,3-4级","09日20时,n02,阴,3℃,西北风,<3级","10日02时,n00,晴,1℃,西北风,<3级"],["10日08时,d00,晴,1℃,北风,<3级","10日14时,d00,晴,8℃,东南风,<3级","10日20时,n00,晴,4℃,北风,<3级"]]}
+var hour3data={"1d":["14日08时,d00,晴,4℃,西风,<3级","14日11时,d00,晴,11℃,东南风,<3级","14日14时,d00,晴,15℃,东南风,<3级","14日17时,d00,晴,12℃,西南风,<3级","14日20时,n00,晴,7℃,西北风,<3级","14日23时,n00,晴,6℃,北风,<3级","15日02时,n01,多云,4℃,北风,<3级","15日05时,n01,多云,4℃,北风,<3级","15日08时,d01,多云,5℃,北风,<3级","15日11时,d00,晴,9℃,东北风,<3级","15日14时,d00,晴,11℃,东南风,<3级","15日17时,d00,晴,10℃,东风,<3级","15日20时,n00,晴,6℃,西风,<3级"],"23d":[["14日08时,d00,晴,4℃,西风,<3级","14日11时,d00,晴,11℃,东南风,<3级","14日14时,d00,晴,15℃,东南风,<3级","14日17时,d00,晴,12℃,西南风,<3级","14日20时,n00,晴,7℃,西北风,<3级","14日23时,n00,晴,6℃,北风,<3级","15日02时,n01,多云,4℃,北风,<3级","15日05时,n01,多云,4℃,北风,<3级"],["20日08时,d01,多云,4℃,北风,<3级","20日14时,d02,阴,11℃,西北风,<3级","20日20时,n00,晴,5℃,西南风,<3级","21日02时,n00,晴,5℃,西北风,<3级"]],"7d":[["14日08时,d00,晴,4℃,西风,<3级","14日11时,d00,晴,11℃,东南风,<3级","14日14时,d00,晴,15℃,东南风,<3级","14日17时,d00,晴,12℃,西南风,<3级","14日20时,n00,晴,7℃,西北风,<3级","14日23时,n00,晴,6℃,北风,<3级","15日02时,n01,多云,4℃,北风,<3级","15日05时,n01,多云,4℃,北风,<3级"],["15日08时,d01,多云,5℃,北风,<3级","15日11时,d00,晴,9℃,东北风,<3级","15日14时,d00,晴,11℃,东南风,<3级","15日17时,d00,晴,10℃,东风,<3级","15日20时,n00,晴,6℃,西风,<3级","15日23时,n00,晴,5℃,西北风,<3级","16日02时,n00,晴,3℃,西北风,<3级","16日05时,n00,晴,3℃,西北风,<3级"],["16日08时,d00,晴,4℃,西北风,<3级","16日11时,d00,晴,8℃,北风,<3级","16日14时,d00,晴,12℃,南风,<3级","16日17时,d00,晴,10℃,南风,<3级","16日20时,n00,晴,6℃,西南风,<3级","16日23时,n00,晴,5℃,西南风,<3级","17日02时,n00,晴,4℃,北风,<3级","17日05时,n02,阴,4℃,西北风,<3级"],["17日08时,d02,阴,4℃,东北风,<3级","17日14时,d00,晴,12℃,东北风,<3级","17日20时,n00,晴,7℃,西北风,<3级","18日02时,n00,晴,4℃,西北风,<3级"],["18日08时,d00,晴,4℃,西北风,<3级","18日14时,d01,多云,14℃,南风,<3级","18日20时,n02,阴,8℃,西北风,<3级","19日02时,n02,阴,5℃,北风,<3级"],["19日08时,d00,晴,5℃,西北风,<3级","19日14时,d02,阴,11℃,东北风,<3级","19日20时,n02,阴,7℃,西风,<3级","20日02时,n01,多云,6℃,北风,<3级"],["20日08时,d01,多云,4℃,北风,<3级","20日14时,d02,阴,11℃,西北风,<3级","20日20时,n00,晴,5℃,西南风,<3级","21日02时,n00,晴,5℃,西北风,<3级"]]}
 </script>
 		
 		</div>
 
 		<div id="around" class="around">
 								<div class="aro_view" style="display:block;">
-					<input type="hidden" id="around_city_travel_update_time" value="2021110320"/>
+					<input type="hidden" id="around_city_travel_update_time" value="2021111408"/>
 <h1 class="clearfix view">
 <span>周边地区</span>
 <em>|</em>
 <span class="move">周边景点</span>
-<i>2021-11-03 18:00更新</i>
+<i>2021-11-14 07:30更新</i>
 </h1>
 <ul class="clearfix view">
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020005A.shtml#around2" target="_blank">
 <span>太平洋汉海海底世界</span>
 <p class="img clearfix">
-<big class="jpg30 n01"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>5/17°C</i>
+<i>13/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020006A.shtml#around2" target="_blank">
 <span>北京动物园</span>
 <p class="img clearfix">
-<big class="jpg30 n01"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>7/19°C</i>
+<i>15/3°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020007A.shtml#around2" target="_blank">
 <span>北京植物园</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>6/19°C</i>
+<i>15/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020008A.shtml#around2" target="_blank">
 <span>凤凰岭自然风景区公园</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>4/19°C</i>
+<i>15/1°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020009A.shtml#around2" target="_blank">
 <span>香山公园</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>6/19°C</i>
+<i>15/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020010A.shtml#around2" target="_blank">
 <span>玉渊潭公园</span>
 <p class="img clearfix">
-<big class="jpg30 n01"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>5/17°C</i>
+<i>13/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020011A.shtml#around2" target="_blank">
 <span>圆明园遗址公园</span>
 <p class="img clearfix">
-<big class="jpg30 n01"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>3/19°C</i>
+<i>15/1°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020001A.shtml#around2" target="_blank">
 <span>百望山森林公园</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>7/19°C</i>
+<i>16/3°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020012A.shtml#around2" target="_blank">
 <span>中国科学院植物研究所北京植物园</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>4/19°C</i>
+<i>15/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020002A.shtml#around2" target="_blank">
 <span>北京鹫峰国家森林公园</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>4/19°C</i>
+<i>16/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020003A.shtml#around2" target="_blank">
 <span>北京天文馆</span>
 <p class="img clearfix">
-<big class="jpg30 n01"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>7/19°C</i>
+<i>15/3°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/10101020004A.shtml#around2" target="_blank">
 <span>锦绣大地农业观光园区</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n01"></big>
 </p>
-<i>4/19°C</i>
+<i>14/1°C</i>
 </a>
 </li>
 </ul>
 				</div>
 				<div class="aro_city">
-					<input type="hidden" id="around_city_china_update_time" value="2021110320"/>
+					<input type="hidden" id="around_city_china_update_time" value="2021111408"/>
 <h1 class="clearfix city">
 <span class="move">周边地区</span>
 <em>|</em>
 <span>周边景点</span>
-<i>2021-11-03 18:00更新</i>
+<i>2021-11-14 07:30更新</i>
 </h1>
 <ul class="clearfix city">
 <li>
 <a href="http://www.weather.com.cn/weather1d/101090604.shtml#around2" target="_blank">
 <span>香河</span>
 <p class="img clearfix">
-<big class="jpg30 n18"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n00"></big>
 </p>
-<i>4/18°C</i>
+<i>16/1°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101090218.shtml#around2" target="_blank">
 <span>涿州</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>5/18°C</i>
+<i>16/1°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101090603.shtml#around2" target="_blank">
 <span>永清</span>
 <p class="img clearfix">
-<big class="jpg30 n18"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>4/18°C</i>
+<i>16/1°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101011400.shtml#around2" target="_blank">
 <span>门头沟</span>
 <p class="img clearfix">
-<big class="jpg30 n18"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n00"></big>
 </p>
-<i>5/18°C</i>
+<i>17/3°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101030100.shtml#around2" target="_blank">
 <span>天津</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n00"></big>
 </p>
-<i>10/16°C</i>
+<i>16/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101011100.shtml#around2" target="_blank">
 <span>大兴</span>
 <p class="img clearfix">
-<big class="jpg30 n18"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n00"></big>
 </p>
-<i>4/19°C</i>
+<i>17/1°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101090601.shtml#around2" target="_blank">
 <span>廊坊</span>
 <p class="img clearfix">
-<big class="jpg30 n18"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n02"></big>
 </p>
-<i>5/18°C</i>
+<i>16/2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101011000.shtml#around2" target="_blank">
 <span>石景山</span>
 <p class="img clearfix">
-<big class="jpg30 n18"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n00"></big>
 </p>
-<i>3/18°C</i>
+<i>17/0°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101090312.shtml#around2" target="_blank">
 <span>涿鹿</span>
 <p class="img clearfix">
-<big class="jpg30 n01"></big>
-<em>/</em>
 <big class="jpg30 d00"></big>
+<em>/</em>
+<big class="jpg30 n00"></big>
 </p>
-<i>3/17°C</i>
+<i>12/-2°C</i>
 </a>
 </li>
 <li>
 <a href="http://www.weather.com.cn/weather1d/101090201.shtml#around2" target="_blank">
 <span>保定</span>
 <p class="img clearfix">
-<big class="jpg30 n00"></big>
+<big class="jpg30 d01"></big>
 <em>/</em>
-<big class="jpg30 d00"></big>
+<big class="jpg30 n01"></big>
 </p>
-<i>4/18°C</i>
+<i>16/0°C</i>
 </a>
 </li>
 </ul>
@@ -606,17 +605,17 @@ var hour3data={"1d":["03日20时,n00,晴,10℃,东北风,<3级","03日23时,n00,
    <div id='scrollPic' class="m">
       <ul class="bigImg clearfix">  
            
-         <li><a href="http://p.weather.com.cn/2021/11/3501500.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/02/202111021024184264827C5F59BDB5EFA502CE7A0F8E06.jpg" alt="河北崇礼下雪 雪花纷飞地面见白" width="300" height="227"></a></li>
+         <li><a href="http://p.weather.com.cn/2021/11/3503310.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/10/2021111009330581A745F8304E1D841C4996327A77078C.jpg" alt="沈阳环卫工人全力“战”雪保通行" width="300" height="227"></a></li>
            
-         <li><a href="http://p.weather.com.cn/2021/11/3501372.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/01/2021110114204624BF7C0E6CA3FCF7D3E51505771C5202.jpg" alt="北京动物园树叶变色 斑斓色彩如油画" width="300" height="227"></a></li>
+         <li><a href="http://p.weather.com.cn/2021/11/3502264.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/05/20211105160413CE7EDC0758DC1188DA3A781BAF61A75F.jpg" alt="寒冷速冻天 小动物取暖萌态百出" width="300" height="227"></a></li>
            
-         <li><a href="http://p.weather.com.cn/2021/10/3500894.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/10/28/2021102817182301533A9689F0B2641281E3ABE02AE9EB.jpg" alt="萌萌哒！黑龙江大庆文须雀灵动可爱" width="300" height="227"></a></li>
+         <li><a href="http://p.weather.com.cn/2021/11/3503324.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/10/2021111009532260F780C6417746360DE68C47B78B3AEB.jpg" alt="河北邢台现“飞碟云” 如同科幻大片" width="300" height="227"></a></li>
            
-         <li><a href="http://p.weather.com.cn/2021/10/3500798.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/sjztj/2021/10/28/2021102717102817F6AB9BB89E5125BD561C45DE3DE907.jpg" alt="广西阳朔万亩甘蔗丰收 “甜蜜来袭”" width="300" height="227"></a></li>
+         <li><a href="http://p.weather.com.cn/2021/11/3503104.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/09/2021110907391310655A870FE05321226DE23EB735CA38.jpg" alt="北京西山橙粉色云朵装扮天空 美如画卷" width="300" height="227"></a></li>
            
-         <li><a href="http://p.weather.com.cn/2021/10/3500429.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/sjztj/2021/10/26/2021102610435529833FF142FEA94795DA13114B3F68E3.jpg" alt="重庆黔江金秋吊瓜红 农家采收忙" width="300" height="227"></a></li>
+         <li><a href="http://p.weather.com.cn/2021/11/3503182.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/09/20211109111717F1919E2B082E056F166089C6E9CB8BD6.jpg" alt="福州天空如同打翻调色盘" width="300" height="227"></a></li>
            
-         <li><a href="http://p.weather.com.cn/2021/11/3501387.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/sjztj/2021/11/01/20211101150440A77215DBE79D1EFC3DEA81C521AA7772.jpg" alt="四川广安芙蓉惊艳绽放 城市添色彩" width="300" height="227"></a></li>
+         <li><a href="http://p.weather.com.cn/2021/11/3503356.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2021/11/10/20211110110027DF599C1FD2011687B9EB3D803652022C.jpg" alt="陕西汉中秋色正浓 赤橙黄绿美景如画" width="300" height="227"></a></li>
          
 
       </ul>
@@ -631,9 +630,9 @@ var hour3data={"1d":["03日20时,n00,晴,10℃,东北风,<3级","03日23时,n00,
 </div>
 <!--焦点图end-->
 <ul class="list">
-   <li><a href="http://p.weather.com.cn/2021/09/3495167.shtml" target="_blank" style="color:" > 广西靖西田野金黄 美景如画 </a></li>  
+   <li><a href="http://p.weather.com.cn/2021/11/3503021.shtml" target="_blank" style="color:" > 四川黄茅埂风景区迎今冬初雪 </a></li>  
 
-   <li><a href="http://p.weather.com.cn/2021/10/3497161.shtml" target="_blank" style="color:" > 雨过天晴 北京百花山云海壮观 </a></li>  
+   <li><a href="http://p.weather.com.cn/2021/11/3502982.shtml" target="_blank" style="color:" > 江西庐山现今年下半年来首场雨凇 </a></li>  
 
    
 
