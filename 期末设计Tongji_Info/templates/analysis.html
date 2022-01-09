@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="static/assets/js/echarts.min.js"></script>
+
+  <title>同济校园通知信息平台</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="temp.html"><span>Tongji Info</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="temp.html"><img src="static1/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/index">首页<i class="la la-angle-down"></i></a></li>
+          <li><a href="/news">校园通知</a></li>
+          <li><a href="/analysis">录取统计</a></li>
+          <li><a href="/word">通知词云</a></li>
+            <li><a href="/search">通知搜索</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>录取统计数据可视化</h2>
+        </div>
+
+        <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+            <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+            <div id="main" style="width: 100%;height:800px"></div>
+
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+ <script type="text/javascript">
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+
+const builderJson = {
+  all: 120,
+  charts: {
+    GPA: 8,
+    82: 15,
+    83: 10,
+    84: 28,
+    85: 55,
+    86: 45,
+    87: 82,
+    88: 66,
+    89: 30,
+    90: 28,
+    91: 20,
+    92: 15,
+    93: 8
+  },
+  components: {
+    GRE: 7,
+    316: 25,
+    317: 14,
+    318: 36,
+    319: 26,
+    320: 49,
+    321: 24,
+    322: 29,
+    323: 44,
+    324: 26,
+    325: 30,
+    326: 19
+  },
+  ie: 9743
+};
+const downloadJson = {
+  'computer science': 71,
+  'electric engneering': 40,
+  'Information system': 29,
+    'data science': 22,
+  'other': 14
+};
+const themeJson = {
+  'carlifornia': 54,
+  'Texas': 35,
+  'Austin': 16,
+  'NewYork': 31,
+  'Alabama': 21,
+  'other': 19
+};
+const waterMarkText = 'ECHARTS';
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = canvas.height = 100;
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.globalAlpha = 0.08;
+ctx.font = '20px Microsoft Yahei';
+ctx.translate(50, 50);
+ctx.rotate(-Math.PI / 4);
+ctx.fillText(waterMarkText, 0, 0);
+option = {
+  backgroundColor: {
+    type: 'pattern',
+    image: canvas,
+    repeat: 'repeat'
+  },
+  tooltip: {},
+  title: [
+    {
+      text: '分数分布',
+      subtext: '总计 ' + builderJson.all,
+      left: '25%',
+      textAlign: 'center'
+    },
+    {
+      text: '专业分布',
+      subtext:
+        '总计 ' +
+        Object.keys(downloadJson).reduce(function (all, key) {
+          return all + downloadJson[key];
+        }, 0),
+      left: '75%',
+      textAlign: 'center'
+    },
+    {
+      text: '城市分布',
+      subtext:
+        '总计 ' +
+        Object.keys(themeJson).reduce(function (all, key) {
+          return all + themeJson[key];
+        }, 0),
+      left: '75%',
+      top: '50%',
+      textAlign: 'center'
+    }
+  ],
+  grid: [
+    {
+      top: 50,
+      width: '50%',
+      bottom: '45%',
+      left: 10,
+      containLabel: true
+    },
+    {
+      top: '55%',
+      width: '50%',
+      bottom: 0,
+      left: 10,
+      containLabel: true
+    }
+  ],
+  xAxis: [
+    {
+      type: 'value',
+      max: builderJson.all,
+      splitLine: {
+        show: false
+      }
+    },
+    {
+      type: 'value',
+      max: builderJson.all,
+      gridIndex: 1,
+      splitLine: {
+        show: false
+      }
+    }
+  ],
+  yAxis: [
+    {
+      type: 'category',
+      data: Object.keys(builderJson.charts),
+      axisLabel: {
+        interval: 0,
+        rotate: 30
+      },
+      splitLine: {
+        show: false
+      }
+    },
+    {
+      gridIndex: 1,
+      type: 'category',
+      data: Object.keys(builderJson.components),
+      axisLabel: {
+        interval: 0,
+        rotate: 30
+      },
+      splitLine: {
+        show: false
+      }
+    }
+  ],
+  series: [
+    {
+      type: 'bar',
+      stack: 'chart',
+      z: 3,
+      label: {
+        position: 'right',
+        show: true
+      },
+      data: Object.keys(builderJson.charts).map(function (key) {
+        return builderJson.charts[key];
+      })
+    },
+    {
+      type: 'bar',
+      stack: 'chart',
+      silent: true,
+      itemStyle: {
+        color: '#eee'
+      },
+      data: Object.keys(builderJson.charts).map(function (key) {
+        return builderJson.all - builderJson.charts[key];
+      })
+    },
+    {
+      type: 'bar',
+      stack: 'component',
+      xAxisIndex: 1,
+      yAxisIndex: 1,
+      z: 3,
+      label: {
+        position: 'right',
+        show: true
+      },
+      data: Object.keys(builderJson.components).map(function (key) {
+        return builderJson.components[key];
+      })
+    },
+    {
+      type: 'bar',
+      stack: 'component',
+      silent: true,
+      xAxisIndex: 1,
+      yAxisIndex: 1,
+      itemStyle: {
+        color: '#eee'
+      },
+      data: Object.keys(builderJson.components).map(function (key) {
+        return builderJson.all - builderJson.components[key];
+      })
+    },
+    {
+      type: 'pie',
+      radius: [0, '30%'],
+      center: ['75%', '25%'],
+      data: Object.keys(downloadJson).map(function (key) {
+        return {
+          name: key.replace('.js', ''),
+          value: downloadJson[key]
+        };
+      })
+    },
+    {
+      type: 'pie',
+      radius: [0, '30%'],
+      center: ['75%', '75%'],
+      data: Object.keys(themeJson).map(function (key) {
+        return {
+          name: key.replace('.js', ''),
+          value: themeJson[key]
+        };
+      })
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+
+
+       </script>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Tongji Info</span></strong>. All Rights Reserved
+      </div>
+    
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -50,7 +50,7 @@ if __name__=='__main__':
         response=requests.get(detail_url,headers=headers)
         detail_text=response.text
         tree = etree.HTML(detail_text)
-        #获取书名
+        # 获取书名
         name=tree.xpath('//h1/span[@property="v:itemreviewed"]/text()')[0]
         name = strip_character(name)
         print(name)

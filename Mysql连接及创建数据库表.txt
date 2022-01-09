@@ -1,0 +1,15 @@
+#连接数据库
+mysql -u root -p
+#输入密码
+your password
+#创建数据库
+create database Study charset utf8;
+#创建数据表
+CREATE TABLE IF NOT EXISTS student(
+   s_no CHAR(6) NOT NULL COMMENT '学号',
+   class_no CHAR(6) NOT NULL COMMENT '班级号',
+   s_name VARCHAR(10) NOT NULL COMMENT '学生姓名',
+   s_sex CHAR(2) ENUM('男','女') COMMENT '性别',
+   s_birthday datetime DEFAULT NULL COMMENT '出生日期',
+   PRIMARY KEY (s_no)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
